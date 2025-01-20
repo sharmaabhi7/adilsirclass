@@ -9,12 +9,35 @@ const AdminModel = new Schema({
     type: String,
     required: true,
   },
+  phone:{
+    type:String,
+    required:true
+  },
   password: {
     type: String,
     required: true,
   },
-
+  cpassword: {
+    type: String,
+    required: true,
+  },
+  food:[
+    {
+      foodname:{
+        type:String,
+    },
+    price:{
+        type:Number,
+    },
+    description:{
+        type:String,
+    },
+    userId:{
+        type:String,
+    }
+    }
+  ]
 });
 
 
-export default model("   ", AdminModel);
+export default model("user", AdminModel);

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const connectToDb = async () => {
-  await mongoose.connect("apna url dal le bhai"
+  await mongoose.connect("mongodb://localhost:27017/abc"
     )
     .then((conn) => {
       console.log(`db connected: ${conn.connection.host}`);

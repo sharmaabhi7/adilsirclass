@@ -1,19 +1,20 @@
 import { model,Schema } from "mongoose";
 
 const OrderModel = new Schema({
-    name:{
-        type:String,
-        required:true
-    },
-    foodvarity:{
+    foodName:{
         type:String,
         required:true,
-        enum:['VEG','NON-VEG'],
     },
-    rest:{
+    price:{
+        type:Number,
+        required:true,
+    },
+    description:{
         type:String,
         required:true,
-        default:"Dahi Handi"
+    },
+    userId:{
+        type:String,
     }
 })
 
